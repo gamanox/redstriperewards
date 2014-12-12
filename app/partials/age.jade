@@ -1,0 +1,40 @@
+
+.imgbG#age_gate
+	.holdwithGrid
+		.safe-all
+			.logo
+			.hold_ageGate
+				h3 You must 18 year or older to participate. <br> Please confirm your DOB
+				.holdDOB
+					#holD.dayInput.boxIp.btn_cursor
+						input(type="hidden", id="day_gate", class="day_check")
+						#hoDays.mainselector(data-howInside="5")
+							p Day
+						.holdDrops#hoDays-in
+						
+					#holM.monthInput.boxIp.btn_cursor
+						input(type="hidden", id="month_gate", class="month_check")
+						#hoMonths.mainselector(data-howInside="5")
+							p Month
+						.holdDrops#hoMonths-in
+					#holdY.yearInput.boxIp.btn_cursor
+						input(type="hidden", id="year_gate", class="year_check")
+						#hoYears.mainselector(data-howInside="5")
+							p Year
+						.holdDrops#hoYears-in
+				.downHold
+					.remindMeHold
+						.checkbox_age.btn_cursor
+						p Remember Me 
+					.btsumit.btn_cursor.btn-borders
+						p Submit
+				.lineBtm
+				.holdLow
+					P Do you have a Web Access Code via SMS?<br><span> Enter Here </span>
+					.inputbtm
+						input(type="text", name="code_agegate", id="age_gate_code", class="code")
+			.sorry_hold
+				h2 Sorry, you must be over 18 to participate
+				.hold_btns.centerIt-h
+					.btn_back.btn_cursor.btns_btm.btn-borders
+						p Go Back

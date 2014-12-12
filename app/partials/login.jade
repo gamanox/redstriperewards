@@ -1,0 +1,34 @@
+.imgbG#login_gate.reg_form.log_bg
+	.holdwithGrid
+		.safe-all
+			.logo
+			.holdConfirmation
+				h2 Login
+				.hold_names.centerIt-h.sossn.logs
+					.inputsnames
+						.conect_facebook.btn_cursor.btns_sosConect.btn-borders
+							p Login via Facebook
+					.inputsnames
+						.conect_twitter.btn_cursor.btns_sosConect.btn-borders
+							p Login via Twitter
+
+					h4 Or via e-mail/ cell phone:
+					.iconos.centerIt-h
+						.icono1.icsin.btn_cursor#mail_log.btn_login_chage_option
+						.icono2.icsin.btn_cursor#cel_log.btn_login_chage_option
+				.holdOtherR.centerIt-h
+					.topIns
+						.inputlog#mail_log-input.activeInput
+							input(type="text", name="email", id="email_login", placeholder="Email")
+						.inputlog#cel_log-input
+							input(type="text", name="cell", id="cel_login", placeholder="Cell number")
+					.btmIns
+						input(type="password", name="password", id="password_login", placeholder="Password")
+				.hold_btn.centerIt-h
+					.btn_log.btn_cursor.btns_btm.btn-borders.red_btns.centerIt-h
+						p Login
+					.alert
+						p Incorrect user/password: please try again
+				.hold_btn2.centerIt-h
+					a.btn_back.btn_cursor.btn-borders(ng-href="#/home")
+						p Go Back

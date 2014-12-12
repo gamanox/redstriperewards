@@ -1,0 +1,55 @@
+.imgbG#register_gate.reg_form
+	.holdwithGrid
+		.safe-all.center-all
+			.logo
+			.holdConfirmation
+				h2 Register
+				.hold_names.centerIt-h.sossn
+					.inputsnames
+						.conect_facebook.btn_cursor.btns_sosConect.btn-borders
+							p Register via Facebook
+					.inputsnames
+						.conect_twitter.btn_cursor.btns_sosConect.btn-borders
+							p Register via Twitter
+
+					h4 Or enter your information:
+				.hold_names.centerIt-h
+					.inputsnames
+						input(type="text", name="name", id="name_registration", placeholder="Name")
+					.inputsnames.this0
+						input(type="text", name="lastname", id="Lastname_registration", placeholder="Lastname")
+				//- .hold_date.centerIt-h
+				//- 	h4 Date of Birth
+				//- 	.holdDates
+
+				//- 		input(type="text", name="day", id="day_registration", class="day_check")
+				//- 	.holdDates.centerOnes
+				//- 		input(type="text", name="month", id="month_registration", class="month_check")
+				//- 	.holdDates.lastO
+				//- 		input(type="text", name="year", id="year_registration", class="year_check")
+				.hold_secondRow.centerIt-h
+					.inputNames
+						input(type="text", name="mail", id="mail_registration", placeholder="Email")
+					.hold_cel
+						h4 *Cell Number
+						.boxlada
+							p +1 (876)
+						.holdnumber.centeIt
+							input(type="telephone", name="cell", id="cel_registration")
+						//- .holdnumber
+							//- input(type="text", name="cell", id="cel2_registration")
+				.hold_names.centerIt-h
+					.inputsnames
+						input(type="password", name="password", id="password_registration", placeholder="password")
+					.inputsnames.this0
+						input(type="password", name="password_confi", id="password2_registration", placeholder="Confirm password")
+				.alert
+					p 
+				.hold_btns.centerIt-h
+					a.btn_back.btn_cursor.btns_btm.btn-borders(ng-href="#/home")
+						p Go Back
+					.btn_getS.btn_cursor.btns_btm.btn-borders.red_btns
+						p Get Started
+
+
+

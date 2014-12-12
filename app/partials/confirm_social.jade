@@ -1,0 +1,36 @@
+.imgbG#confirm2_gate.reg_form
+	.holdwithGrid
+		.safe-all.center-all
+			.logo
+			.holdConfirmation
+				h2 Please confirm your information
+				.hold_names.centerIt-h
+					.inputsnames
+						input(type="text", name="name", id="name_confirmation", placeholder="Name")
+					.inputsnames.this0
+						input(type="text", name="lastname", id="Lastname_confirmation", placeholder="Lastname")
+				//- .hold_date.centerIt-h
+				//- 	h4 Date of Birth
+				//- 	.holdDates
+
+				//- 		input(type="text", name="day", id="day_confirmation", class="day_check")
+				//- 	.holdDates.centerOnes
+				//- 		input(type="text", name="month", id="month_confirmation", class="month_check")
+				//- 	.holdDates.lastO
+				//- 		input(type="text", name="year", id="year_confirmation", class="year_check")
+				.hold_secondRow.centerIt-h
+					.inputNames
+						input(type="text", name="mail", id="mail_confirmation", placeholder="Email")
+					.hold_cel
+						h4 *Cell Number
+						.boxlada
+							p +1 (876)
+						.holdnumber.centeIt
+							input(name="cell", id="cel_confirmation", maxlength="7", type="telephone", value="5852845")
+						//- .holdnumber
+							//- input(type="text", name="cell", id="cel2_confirmation", maxlength="4", type="telephone")
+				.hold_btns.centerIt-h
+					a.btn_back.btn_cursor.btns_btm.btn-borders(ng-href="#/register")
+						p Go Back
+					.btn_conf.btn_cursor.btns_btm.btn-borders
+						p Confirm

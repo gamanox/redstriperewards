@@ -1,0 +1,2079 @@
+@import	"_fonts"
+// @import	"_reset"
+// @import	"_easing"
+@import	"_mixins"
+@import "_vars"
+
+// @import	"_age"
+// @import	"_confirm"
+// @import	"_loggin"
+// @import	"_register"
+// @import	"_choose"
+// @import	"_profile"
+// @import	"_btmPerfil"
+// @import	"_profile_nav"
+$inout-expo: cubic-bezier(1, 0, 0, 1)
+// //mobile
+$break-small: 760px
+@media screen and (max-width: $break-small)
+// // colores
+
+
+
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input
+	color: $blanco
+	text-decoration: none
+
+p
+	margin: 0 auto
+	position: relative
+	
+
+sub
+	font-size: 10px
+	top: -8px
+	position: relative
+	color: #fff
+	left: -3px
+	
+
+
+
+h2,h3, h4
+	font-size: 25px
+	margin: 0 auto
+	text-align: center
+	color: $negro
+h3 
+	font-size: 20px
+h4
+	font-size: 16px
+
+
+h1
+	text-align: center
+	margin: 0
+	font-size: 40px
+	text-align: center
+	color: $rojo
+	font-style: normal
+	font-weight: 700
+
+
+ul 
+	padding-left: 22px
+	list-style: none
+	
+ul li
+	font-size: 13px
+	line-height: 19px
+	text-indent: -5px
+	
+
+input
+	outline: none
+	border: none
+section
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	display: none
+.section-half, .section-third
+	position: relative
+	float: left
+	height: 100%
+
+.section-half
+	width: 50%
+.section-third
+	width: 33.3%
+	
+
+.autoalpha-0
+	opacity: 0
+	visibility: hidden
+
+.align-center
+	text-align: center
+
+.center-all,
+.center-horizontal,
+.center-vertical
+	position: absolute
+	margin: auto
+
+.center-all,
+.center-horizontal
+	left: 0
+	right: 0
+
+.center-all,
+.center-vertical
+	top: 0
+	bottom: 0
+.centerIt-h
+	position: relative
+	margin: 0 auto
+
+.btn-borders
+	-webkit-border-radius: 5px
+	-moz-border-radius: 5px
+	border-radius: 5px
+
+
+.perfil_bg
+	background-image: url(../images/gui/perfil/bg.png)
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+	.safe-all
+		background-color: $blanco
+		.topPart
+			width: 100%
+			height: 315px
+			padding-top: 50px
+			position: relative
+			// border-bottom: 5px solid $carmesi
+			.pointsCounte
+				width: 90px
+				height: 100px
+				margin-bottom: 10px
+				p
+					text-align: center
+					color: $negro
+					span 
+						font-weight: 700
+						color: $negro
+						font-style: italic
+						left: -10px
+						position: relative
+				h1 
+					color: $rojo
+					font-weight: 700
+					margin-bottom: 0px
+				.btnShow
+					width: 18px
+					height: 18px
+					background-position: center
+					background-repeat: no-repeat
+					background-image: url(../images/gui/perfil/assets/drop_down_points.png)
+					position: absolute
+					bottom: 16px
+					right: 0
+			.copyPart
+				width: 500px
+				height: 100px
+				.ttp
+					margin-bottom: 10px
+					p 
+						text-align: center
+						color: $negro
+						span 
+							color: $negro 
+				.lbp
+					width: 420px
+					height: 33px
+					margin-bottom: 15px
+				.floLsection
+					float: left
+					height: 33px
+					position: relative 
+					p  
+						top: 7px
+						color: $negro
+						span 
+							font-weight: 700
+							font-size: 20px
+							position: relative
+							color: $negro
+							top: 0px
+					&.inputhOLS
+						width: 100px
+						height: 30px
+						border: 1px solid $negro
+						margin-left: 10px
+						margin-right: 10px
+						p 
+							text-align: center !important
+
+			.shareSect
+				width: 360px
+				height: 55px
+				margin-bottom: 10px
+				.holdTX
+					float: left
+					width: 74px
+					padding-top: 10px
+					height: 20px
+					p 
+						color: $negro
+						top: 10px
+					
+				.boxSocial
+					width: 277px
+					height: 50px
+					border: 1px solid $gris-font
+					position: relative
+					float: left
+					
+					.linkBtn
+						position: absolute
+						top: 5px
+						background-repeat: no-repeat
+						background-position: center
+						width: 32px
+						height: 32px
+						&.fb_linkShare
+							background-image: url(../images/gui/perfil/assets/fb.png)
+							left: 25px
+						&.tt_linkShare
+							background-image: url(../images/gui/perfil/assets/Forma-12.png)
+							left: 103px
+						&.email_linkShare
+							width: 82px
+							left: 178px
+							background-image: url(../images/gui/perfil/assets/email.png)
+			.lastCopy
+				width: 100%
+				height: 20px
+				position: relative
+				p
+					text-align: center
+					top: 5px
+					color: $negro
+					span 	
+						font-weight: 700
+						font-size: 20px
+						position: relative
+						color: $negro
+						top: 3px
+
+						.perfil_bg
+							.nav_var
+								width: 100%
+								height: 50px
+								position: absolute
+								left: 0
+								top: 85px
+								background-color: $carmesi
+								.safe-in
+									width: 960px
+									height: 100px
+									.profile_gating
+										width: 310px
+										height: 100px
+										float: left
+										position: relative
+										.circleimg
+											width: 98px
+											height: 98px
+											position: absolute
+											+border-radius(50%)
+											overflow: hidden
+											top: -30px 
+											left: 0
+											img 
+												width: 100%
+												height: 100px
+										.holder_dropdown
+											width: 208px
+											height: 100px
+											position: absolute
+											top: 0
+											right: 0
+											.welcomTxt
+												width: 100%
+												height: 100%
+												position: absolute
+												top: 0
+												left: 0
+												p  
+													top: 13px
+													left: 10px 
+													span 
+														color: $rojo
+											.bullet
+												width: 18px
+												height: 18px
+												position: absolute
+												top: 15px
+												right: 15px
+												background-image: url(../images/gui/perfil/assets/drop_Down_account.png)
+												
+											.droping
+												width: 100%
+												height: 0px/*70*/
+												position: absolute
+												top: 50px
+												left: 0
+												overflow: hidden
+												
+												.selctionThis
+													width: 100%
+													height: 35px
+													position: relative
+													background-color: $carmesi
+													p 
+														text-align: left
+														color: $blanco
+														left: 10px
+														top: 5px
+													&:hover
+														background-color: $light-carmesi
+									.logoOne
+										width: 90px
+										height: 137px
+										top: -70px
+										left: -70px
+										img
+											width: 100%
+									.conections_part
+										width: 420px
+										padding-top: 15px 
+										height: 22px
+										position: relative
+										float: right
+										p 
+											float: left
+											font-weight: 700
+											margin-right: 20px
+											font-size: 12px
+											top: 5px
+										.socilasConects
+											width: 275px
+											height: 24px
+											position: relative
+											float: left
+											
+											.iconRed
+												width: 24px
+												height: 24px
+												position: relative
+												float: left
+												margin-right: 20px
+												img 
+													height: 100%
+											p 
+												margin-right: 0
+												
+
+
+
+
+
+// .choose_bg
+// 	.nav_var
+// 		width: 100%
+// 		height: 50px
+// 		position: absolute
+// 		left: 0
+// 		top: 85px
+// 		background-color: $carmesi
+// 		.safe-in
+// 			width: 960px
+// 			height: 100px
+// 			.profile_gating
+// 				width: 310px
+// 				height: 100px
+// 				float: left
+// 				position: relative
+// 				.circleimg
+// 					width: 98px
+// 					height: 98px
+// 					position: absolute
+// 					-webkit-border-radius: 50%
+// 					-moz-border-radius: 50%
+// 					border-radius: 50%
+// 					overflow: hidden
+// 					top: -30px 
+// 					left: 0
+// 					img 
+// 						width: 100%
+// 						height: 100px
+// 				.holder_dropdown
+// 					width: 208px
+// 					height: 100px
+// 					position: absolute
+// 					top: 0
+// 					right: 0
+// 					.welcomTxt
+// 						width: 100%
+// 						height: 100%
+// 						position: absolute
+// 						top: 0
+// 						left: 0
+// 						p  
+// 							top: 13px
+// 							left: -10px 
+// 							span 
+// 								color: $rojo
+// 					.bullet
+// 						width: 18px
+// 						height: 18px
+// 						position: absolute
+// 						top: 15px
+// 						right: 15px
+// 						background-image: url(../images/gui/perfil/assets/drop_Down_account.png)
+						
+// 					.droping
+// 						width: 100%
+// 						height: 0px/*70*/
+// 						position: absolute
+// 						top: 50px
+// 						left: 0
+// 						overflow: hidden
+						
+// 						.selctionThis
+// 							width: 100%
+// 							height: 35px
+// 							position: relative
+// 							background-color: $carmesi
+// 							p 
+// 								text-align: left
+// 								color: $blanco
+// 								left: 10px
+// 								top: 5px
+// 							&:hover
+// 								background-color: $light-carmesi
+// 			.logoOne
+// 				width: 90px
+// 				height: 137px
+// 				top: -70px
+// 				left: -70px
+// 				img
+// 					width: 100%
+// 			.conections_part
+// 				width: 420px
+// 				padding-top: 15px 
+// 				height: 22px
+// 				position: relative
+// 				float: right
+// 				p 
+// 					float: left
+// 					font-weight: 700
+// 					margin-right: 20px
+// 					font-size: 12px
+// 					top: 5px
+// 				.socilasConects
+// 					width: 275px
+// 					height: 24px
+// 					position: relative
+// 					float: left
+					
+// 					.iconRed
+// 						width: 24px
+// 						height: 24px
+// 						position: relative
+// 						float: left
+// 						margin-right: 20px
+// 						img 
+// 							height: 100%
+// 					p 
+// 						margin-right: 0
+						
+
+
+
+
+
+
+
+
+
+
+
+
+.choose_bg .safe-all
+	.btmpart
+		width: 100%
+		height: 320px
+		position: relative
+		background-color: $amarillo
+		background-image: url(../images/gui/perfil/pestana.png)
+		background-repeat-y: no-repeat
+		background-position: center top
+		.holdRefers
+			width: 170px
+			height: 50px
+			margin-bottom: 20px
+			.friensSo
+				width: 100%
+				height: 25px
+				p
+					text-align: center
+					color: $gris-font
+			.holdLOw
+				width: 50px
+				height: 25px
+				.lftm
+					width: 50%
+					float: left
+					height: 100%
+				.counter_Friends p 
+					color: $rojo
+					text-align: right
+				.iconoMn
+					width: 21px
+					height: 21px
+					background-image: url(../images/gui/perfil/assets/friends_so_far.png)
+					background-repeat: no-repeat
+					background-position: center
+		.getMore
+			width: 295px
+			height: 35px
+			border-bottom: 2px solid #ede0a7
+			margin-bottom: 20px
+			h2 
+				text-align: center
+				color: $carmesi
+		.holdBtnsPromos
+			width: 710px
+			height: 140px
+			.btnsGo
+				width: 100%
+				height: 52px
+				position: relative
+				margin-bottom: 20px
+				background-repeat: no-repeat
+				&.btn_chll
+					background-image: url(../images/gui/perfil/btn_challenge.png)
+					background-position: left center
+				&.btn_mth
+					width: 412px
+					background-image: url(../images/gui/perfil/match.png)
+					background-position: right center
+					position: absolute
+					top: 0
+					right: -3px
+				&.btn_code
+					background-image: url(../images/gui/perfil/btn_code.png)
+					background-position: right center
+					position: absolute
+					bottom: 0
+					right: 0
+			.redXms
+				width: 298px
+				height: 66px
+				background-image: url(../images/gui/perfil/chal.png)
+				background-position: left center
+		.btmTab.btn_cursor
+			height: 60px
+			width: 100%
+			position: absolute
+			left: 0
+			bottom: 0
+			background-image: url(../images/gui/perfil/pestanaL.png)
+			background-repeat-y: no-repeat
+			background-position: center top
+			h1
+				color: $blanco
+				text-align: center
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.perfil_bg
+	background-image: url(../images/gui/perfil/bg.png)
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+	.safe-all
+		background-color: $blanco
+		.topPart
+			width: 100%
+			height: 315px
+			padding-top: 50px
+			position: relative
+			// border-bottom: 5px solid $carmesi
+			.pointsCounte
+				width: 90px
+				height: 100px
+				margin-bottom: 10px
+				p
+					text-align: center
+					color: $negro
+					span 
+						font-weight: 700
+						color: $negro
+						font-style: italic
+						left: -10px
+						position: relative
+				h1 
+					color: $rojo
+					font-weight: 700
+					margin-bottom: 0px
+				.btnShow
+					width: 18px
+					height: 18px
+					background-position: center
+					background-repeat: no-repeat
+					background-image: url(../images/gui/perfil/assets/drop_down_points.png)
+					position: absolute
+					bottom: 16px
+					right: 0
+			.copyPart
+				width: 500px
+				height: 100px
+				.ttp
+					margin-bottom: 10px
+					p 
+						text-align: center
+						color: $negro
+						span 
+							color: $negro 
+				.lbp
+					width: 420px
+					height: 33px
+					margin-bottom: 15px
+				.floLsection
+					float: left
+					height: 33px
+					position: relative
+					p  
+						top: 7px
+						color: $negro
+						span 
+							font-weight: 700
+							font-size: 20px
+							position: relative
+							color: $negro
+							top: 0px
+					&.inputhOLS
+						width: 100px
+						height: 30px
+						border: 1px solid $negro
+						margin-left: 10px
+						margin-right: 10px
+
+			.shareSect
+				width: 360px
+				height: 55px
+				margin-bottom: 10px
+				.holdTX
+					float: left
+					width: 74px
+					padding-top: 10px
+					height: 20px
+					p 
+						color: $negro
+						top: 10px
+					
+				.boxSocial
+					width: 277px
+					height: 50px
+					border: 1px solid $gris-font
+					position: relative
+					float: left
+					
+					.linkBtn
+						position: absolute
+						top: 5px
+						background-repeat: no-repeat
+						background-position: center
+						width: 32px
+						height: 32px
+						&.fb_linkShare
+							background-image: url(../images/gui/perfil/assets/fb.png)
+							left: 25px
+						&.tt_linkShare
+							background-image: url(../images/gui/perfil/assets/Forma-12.png)
+							left: 103px
+						&.email_linkShare
+							width: 82px
+							left: 178px
+							background-image: url(../images/gui/perfil/assets/email.png)
+			.lastCopy
+				width: 100%
+				height: 20px
+				position: relative
+				p
+					text-align: center
+					top: 5px
+					color: $negro
+					span 	
+						font-weight: 700
+						font-size: 20px
+						position: relative
+						color: $negro
+						top: 3px
+
+
+.choose_bg
+	background-image: url(../images/gui/choose/bg.png)
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+	h2, h3, h1
+		color: $blanco
+		span 
+			font-style: italic
+
+	h1 
+		margin-bottom: 20px
+	.holdVeryfied_btns
+		width: 430px
+		height: 40px
+		margin-top: 30px
+		margin-bottom: 60px
+		.btns_btm
+			width: 150px
+			height: 40px
+			position: relative
+			float: left
+			&.btn_sms
+				float: right
+	.lineBtm
+		width: 430px
+	
+	p 
+		text-align: center
+		span 
+			font-weight: 700
+	.holdVeryfied_btn
+		width: 168px
+		height: 40px
+		margin-top: 60px
+		.btns_btm
+			width: 150px
+			height: 40px
+			position: relative
+			float: left
+			background-image: url("../images/gui/choose/back.png")
+			background-position: 13px center
+			background-repeat: no-repeat
+			&.smsV
+				background-color: $blanco
+				background-image: url("../images/gui/age/back.png")
+				p 
+					color: $negro
+		.btn_getS
+			width: 150px
+			height: 45px
+			position: relative
+			display: block
+			p 
+				top: 3px
+
+	.input_hold_verify
+		width: 380px
+		height: 40px
+		margin-top: 30px
+		.holdinpu
+			width: 260px
+			height: 40px
+			float: left
+			overflow: hidden
+		.btn_verify
+			width: 100px
+			height: 40px
+			background-image: url("../images/gui/age/confi.png")
+			background-position: 17px center 
+			float: left
+			background-repeat: no-repeat
+			margin-left: 20px
+			p  
+				left: 15px
+.holdbottoms_cols
+	width: 600px
+	height: 310px
+
+	.btnsHolers
+		height: 100%
+		margin-top: 20px
+		.hold_btns
+			width: 277px
+			height: 40px
+			margin-top: 10px
+			margin-bottom: 20px
+			position: relative
+			.btns_btm
+				width: 100%
+				height: 100%
+				background-color: $blanco
+				background-repeat: no-repeat
+				background-position: 20px center
+				p 
+					top: 10px
+					color: $no-negro
+				.inTxt
+					width: 221px
+					height: 100%
+					position: relative
+					float: right
+					p 
+						left: 0
+				&.btn_fb
+					background-image: url("../images/gui/choose/fb-ico2.png")
+				&.btn_tt
+					background-image: url("../images/gui/choose/tt-ico2.png")
+				&.btn_ig
+					background-image: url("../images/gui/choose/ig-ico2.png")
+				&.red_btns
+					background-color: $rojo 
+					p 
+						color: $blanco
+					&:hover
+						background-color: $rojo-hover
+					&.btn_fb
+						background-image: url("../images/gui/choose/fb-ico.png")
+					&.btn_tt
+						background-image: url("../images/gui/choose/tt-ico.png")
+					&.btn_ig
+						background-image: url("../images/gui/choose/ig-ico.png")
+	.thisIsthe 
+		p 
+			text-align: left !important
+			margin-bottom: 10px
+			color: $gris-font
+		.holdsocials
+			margin-bottom: 30px
+			.iconos_Follow
+				height: 60px
+				width: 28px
+				margin-left: 10px
+				position: relative
+				.iconoIn
+					width: 100%
+					height: 100%
+					position: relative
+					background-repeat: no-repeat
+					background-position: top
+					&#fb
+						background-image: url("../images/gui/choose/fb-ico.png")
+					&#tt
+						background-image: url("../images/gui/choose/tt-ico.png")
+					&#ig
+						background-image: url("../images/gui/choose/ig-ico.png")
+
+				.btn_newletter
+					width: 28px
+					height: 28px
+					background-image: url("../images/gui/choose/nws.png")
+					background-position: center
+					background-repeat: no-repeat
+					&.activeON
+						background-color: $rojo
+
+				&.inconoTextss
+					float: left
+
+					p 
+						float: left
+
+		.btnContinuar
+			width: 195px
+			height: 40px
+			.btn_continueR
+				width: 100%
+				height: 100%
+				background-color: $blanco
+				display: block
+				p 
+					color: $no-negro
+					top: 10px
+					text-align: center !important
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#register_gate, .log_bg
+	background-image: url(../images/gui/register/bg.jpg)
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+	.btns_sosConect
+		width: 100%
+		height: 40px
+		background-repeat: no-repeat
+		background-position: 15px center
+		p 
+			color: $blanco
+			text-align: center
+			top: 10px
+			left: 7px
+	.conect_facebook
+		background-color: $azul-f
+		background-image: url(../images/gui/register/fb.png)
+	.conect_twitter
+		background-color: $azul-t
+		background-image: url(../images/gui/register/tt.png)
+
+	.btn_getS
+		margin-left: 28px
+		background-position: 17px center 
+		p 
+			left: 0 !important
+.logs
+	margin-bottom: 70px !important
+.sossn
+	height: 65px !important
+	h4
+		text-align: center
+		color: $blanco
+	.iconos
+		width: 54px
+		height: 23px
+		margin-top: 10px
+		.icsin
+			width: 50%
+			height: 100%
+			float: left
+			background-image: url(../images/gui/login/iconos.png)
+
+			&.icono1
+				background-position: left center
+			&.icono2
+				background-position: right center
+.holdOtherR
+	width: 240px
+	height: 135px
+	.topIns, .btmIns
+		width: 100%
+		height: 40px
+		margin-bottom: 30px
+		position: relative
+		.inputlog
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+			overflow: hidden
+			display: none
+			&.activeInput
+				display: block
+.hold_btn
+	width: 300px
+	height: 80px
+	.btn_log
+		width: 144px
+		height: 40px
+	.alert 
+		margin-top: 10px
+		p 
+			text-align: center
+.hold_btn2
+	width: 95px
+	height: 35px
+	position: relative
+	
+	.btn_back
+		width: 100%
+		height: 100%
+		background-color: $blanco
+		background-image: url("../images/gui/age/back.png")
+		background-position: 7px center 
+		background-repeat: no-repeat
+		display: block
+		p 
+			color: $negro
+			text-align: center
+			top: 7px
+			left: 7px
+
+
+
+/* ******************************* Hasta abajo esta el login ******************* */
+#home_gate
+	background-color: $negro
+
+	.new-safe
+		width: 100%
+		height: 100%
+		min-width: 640px
+		min-height: 780px
+		position: absolute
+		top: 0
+		left: 0
+		.half-in
+			width: 50%
+			float: left	
+		.full-in
+			width: 100%	
+			clear: both
+			.inImg 
+				width: 97.25% !important		
+		.single-in
+			height: 25%
+		.double-in
+			height: 50%
+			.hover p 
+				bottom: 20px !important
+		.fullD-in
+			height: 100%
+			.double-in
+				.inImg
+					height: 97.25% !important
+					
+
+		.grid-item
+			position: relative
+
+			.inImg
+				width: 95%
+				height: 95%
+				background-position: center
+				-webkit-background-size: cover
+				-moz-background-size: cover
+				-o-background-size: cover
+				background-size: cover
+				&#img-1
+					background-image: url("../images/gui/login/img1.jpg")
+				&#img-2
+					background-image: url("../images/gui/login/img2.jpg")
+				&#img-3
+					background-image: url("../images/gui/login/img3.jpg")
+				&#img-4
+					background-image: url("../images/gui/login/img4.jpg")
+				&#img-5
+					background-image: url("../images/gui/login/img5.jpg")
+				&#img-6
+					background-image: url("../images/gui/login/img6.jpg")
+				&#img-7
+					background-image: url("../images/gui/login/img7.jpg")
+				&#img-8
+					background-image: url("../images/gui/login/img8.jpg")
+				&#img-9
+					background-image: url("../images/gui/login/img9.jpg")
+				&#img-10
+					background-image: url("../images/gui/login/img10.jpg")
+				&#img-11
+					background-image: url("../images/gui/login/img11.jpg")
+				&#img-12
+					background-image: url("../images/gui/login/img12.jpg")
+				&#img-13
+					background-image: url("../images/gui/login/img13.jpg")
+				.hover	
+					width: 100%
+					height: 100%
+					position: absolute
+					top: 0
+					left: 0
+					opacity: 0
+					background-color: $rojo-alpha
+					p 
+						position: absolute
+						bottom: 10px
+						left: 10px
+						line-height: 15px
+					&:hover
+						opacity: 1
+					
+
+
+		.top-section, .btm-section
+			width: 100%
+			position: relative
+		.top-section
+			height: 60%
+			background-image: url("../images/gui/login/bg.jpg")
+			background-position: center
+			-webkit-background-size: cover
+			-moz-background-size: cover
+			-o-background-size: cover
+			background-size: cover
+			.low-ones
+				width: 100%
+				height: 120px
+				position: absolute
+				bottom: 10%
+				left: 0%
+
+			h2 
+				color: $blanco
+				margin-bottom: 30px
+				span 
+					font-style: italic
+			.bts_d
+				height: 40px
+				p 
+					top: 10px
+			.btn_register
+				width: 135px
+				float: right
+				margin-right: 10px
+			.btn_login
+				width: 100px
+				float: left
+				margin-left: 15%
+
+
+		.btm-section
+			height: 40%
+.red_btns
+	background-color: $rojo 
+	&:hover
+		background-color: $rojo-hover
+	p 
+		color: $blanco
+		text-align: center
+		top: 10px
+
+#login_gate .holdwithGrid .safe-all
+	margin-top: 5.7%
+
+
+
+
+
+
+
+
+
+.reg_form
+	background-image: url(../images/gui/confirm/bg.png)
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+
+	.safe-all
+		// padding-top: 60px
+		// height: 640px
+		margin: auto
+
+.holdConfirmation
+	input[type="text"]
+		color: $gris-font
+	h2 
+		color: $blanco
+		margin-bottom: 30px
+	.hold_names
+		width: 500px
+		height: 40px
+		margin-bottom: 40px
+		.inputsnames
+			width: 225px
+			height: 100%
+			position: relative
+			float: left
+			margin-right: 25px
+			overflow: hidden
+			.this0
+				margin-right: 0
+	.alert
+		width: 500px
+		margin-left: auto
+		margin-right: auto
+		p
+			text-align: center
+			padding-bottom: 10px
+	.hold_date
+		width: 260px
+		height: 75px
+		margin-bottom: 15px
+		h4 
+			color: $blanco
+			margin-bottom: 10px
+		.holdDates
+			width: 65px
+			height: 35px
+			float: left
+			input[type="text"]
+				text-align: center !important
+			&.centerOnes
+				margin-left: 18px
+				margin-right: 18px
+			&.lastO
+				width: 89px
+	.hold_secondRow
+		width: 500px
+		height: 40px
+		margin-bottom: 20px
+		.inputNames
+			width: 225px
+			height: 100%
+			position: relative
+			float: left
+			margin-right: 25px
+			overflow: hidden
+	.hold_cel
+		width: 240px
+		height: 65px
+		float: left
+		position: relative
+		top: -24px
+		// margin-left: 25px
+		h4 
+			text-align: left
+			color: $blanco
+			margin-bottom: 10px
+		.boxlada
+			width: 70px
+			height: 35px
+			background-color: $dark-gris
+			float: left
+			
+			p 
+				color: $blanco
+				top: 7px
+				position: relative
+				text-align: center
+		.holdnumber
+			width: 145px
+			height: 35px
+			float: left
+			overflow: hidden
+			input[type="telephone"]
+				text-align: center !important
+			&.centeIt
+				margin-left: 10px
+				margin-right: 10px
+	.hold_btns
+		width: 320px
+		height: 40px
+		.btns_btm
+			width: 142px
+			height: 42px
+			position: relative
+			float: left
+			
+			background-repeat: no-repeat
+			p 
+				position: relative
+				left: 48px
+				top: 10px
+				color: $blanco
+				font-weight: 700
+			&.btn_conf
+				margin-left: 28px
+				background-color: $rojo
+				background-image: url("../images/gui/age/confi.png")
+				background-position: 17px center 
+
+				&:hover 
+					background-color: $rojo-hover
+
+			&.btn_back
+				background-color: $blanco
+				background-image: url("../images/gui/age/back.png")
+				background-position: 20px center 
+				p 
+					color: $negro
+
+#age_gate
+	background-image: url(../images/gui/age/img_bg.png)
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+
+	.safe-all
+		// padding-top: 60px
+		height: 640px
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		margin: auto
+
+	.logo
+		width: 155px
+		height: 231px
+		position: relative
+		margin: 0 auto
+		background-image: url('../images/gui/age/logo.png')
+		background-repeat: no-repeat
+		background-position: center
+		margin-bottom: 30px
+	h3
+		margin-bottom: 30px
+		width: 100%
+		text-align: center
+		color: $gris-font
+	.holdDOB
+		width: 362px
+		height: 30px
+		position: relative
+		margin: 0 auto
+		margin-bottom: 30px
+		z-index: 1
+		.boxIp
+			background-color: $blanco
+			float: left
+			height: 30px
+			position: relative
+			&.dayInput
+				width: 81px
+			&.monthInput
+				width: 106px
+				margin-left: 20px
+				margin-right: 20px
+			&.yearInput
+				width: 135px
+			.mainselector
+				width: 100%
+				height: 100%
+				position: absolute
+				top: 0
+				left: 0
+				background-image: url("../images/gui/age/drop_down.png")
+				background-position: right
+				background-repeat: no-repeat
+				p 
+					color: $negro
+					position: relative
+					margin-top: 8px
+					margin-left: 16px
+					font-size: 13px
+			.holdDrops
+				width: 100%
+				height: 0px
+				position: absolute
+				top: 30px
+				left: 0
+				background-color: $blanco
+				overflow: hidden
+
+				.indeOnes
+					width: 100%
+					height: 15px
+					padding-top: 5px
+					padding-bottom: 5px
+					font-size: 12px
+					&:hover
+						background-color: $gris-hover
+					p 
+						position: relative
+						margin-left: 10px
+						color: $no-negro
+
+	.downHold
+		width: 362px
+		height: 40px
+		margin: 0 auto
+		margin-bottom: 30px
+		.remindMeHold
+			width: 165px
+			height: 19px
+			position: relative
+			margin-top: 12px
+			margin-left: 49px
+			float: left
+			.checkbox_age
+				width: 19px
+				height: 19px
+				background-color: $blanco
+				float: left
+				margin-right: 10px
+				&:hover, &.activeone
+					background-image: url("../images/gui/age/remider.png")
+					background-position: center
+					background-repeat: no-repeat
+		.btsumit
+			width: 148px
+			height: 40px
+			position: relative
+			float: left
+			background-color: $rojo
+			background-image: url("../images/gui/age/submit.png")
+			background-position: 20px 11px
+			background-repeat: no-repeat
+			p 
+				position: relative
+				font-weight: 700
+				top: 11px
+				left: 57px
+	
+	.holdLow
+		position: relative
+		p 
+			text-align: center
+			margin-bottom: 20px
+		.inputbtm
+			width: 134px
+			height: 30px
+			margin: 0 auto
+			input 
+				text-align: center
+
+
+.hold_ageGate,
+	display: block
+
+.sorry_hold
+	display: none
+
+.sorry_hold
+	h2 
+		color: $blanco
+		margin-bottom: 40px
+	.hold_btns
+		width: 142px
+		height: 42px
+		.btns_btm
+			width: 142px
+			height: 42px
+			position: relative
+			float: left
+			
+			background-repeat: no-repeat
+			p 
+				position: relative
+				left: 48px
+				top: 10px
+				color: $blanco
+				font-weight: 700
+		
+			&.btn_back
+				background-color: $blanco
+				background-image: url("../images/gui/age/back.png")
+				background-position: 20px center 
+				p 
+					color: $negro
+
+.lineBtm
+	width: 620px
+	height: 2px
+	position: relative
+	margin: 0 auto
+	background-color: $gris-font
+	margin-bottom: 30px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html,body
+	margin: 0 auto
+	min-width: 980px
+	width: 100%
+	min-height: 760px
+	height: 100%
+	position: relative
+	font-family: helvetica
+	font-family: 'Lato', sans-serif
+
+	
+	
+
+
+
+
+
+#wrapper
+	width: 100%
+	height: 100%
+	min-height: 780px
+	position: relative
+	overflow: hidden
+	.imgbG
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		// position: relative
+		z-index: 1
+		.holdwithGrid
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+			background-image: url('../images/gui/age/bg.png')
+.safe-all
+	width: 980px
+	height: 720px
+	margin: 0 auto
+	margin-top: 7%
+.logo
+	width: 155px
+	height: 231px
+	position: relative
+	margin: 0 auto
+	background-image: url('../images/gui/age/logo.png')
+	background-repeat: no-repeat
+	background-position: center
+	margin-bottom: 30px
+.btn_cursor
+	cursor: pointer
+
+input[type="text"], input[type="number"], input[type="password"], input[type="telephone"]
+	width: 95%
+	height: 100%
+	position: relative
+	padding-left: 5%
+	background-color: $blanco
+	border: none
+	color: $negro
+
+
+
+
+
+
+		
+#prizes_gate
+	.safe-all
+		height: 100%
+		margin-top: 0
+		position: relative
+		background-color: $carmesi
+		.ingGrid
+			width: 890px
+			height: 450px
+			padding-top: 2.5%
+			.este-in
+				height: 215px
+			.half-in
+				width: 50%
+				float: left	
+			.fth-section
+				width: 25%
+				float: left
+			.full-in
+				width: 100%	
+				clear: both
+				.inImg 
+					width: 97.25% !important		
+			.single-in
+				height: 25%
+			.double-in
+				height: 50%
+				.hover p 
+					bottom: 20px !important
+			.fullD-in
+				height: 100%
+				.double-in
+					.inImg
+						height: 97.25% !important
+			.grid-item
+				position: relative
+				p 
+					text-align: left !important
+
+				.inImg
+					width: 95%
+					height: 95%
+					background-position: center
+					-webkit-background-size: cover
+					-moz-background-size: cover
+					-o-background-size: cover
+					background-size: cover
+					overflow: hidden
+					&#prize-1
+						background-image: url(../images/gui/prizes/1.png)
+					&#prize-2
+						background-image: url(../images/gui/prizes/2.png)
+					&#prize-3
+						background-image: url(../images/gui/prizes/3.png)
+					&#prize-4
+						background-image: url(../images/gui/prizes/4.png)
+					&#prize-5
+						background-image: url(../images/gui/prizes/5.png)
+					&#prize-6
+						background-image: url(../images/gui/prizes/6.png)
+					&#prize-7
+						background-image: url(../images/gui/prizes/7.png)
+					&#prize-8
+						background-image: url(../images/gui/prizes/8.png)
+						
+					.hover	
+						width: 100%
+						height: 100%
+						position: absolute
+						top: 0
+						left: 0
+						opacity: 0
+						background-color: $rojo-alpha
+						p 
+							position: absolute
+							bottom: 10px
+							left: 10px
+							line-height: 15px
+
+						&:hover
+							opacity: 1
+		.holdCopyes
+			width: 450px
+			height: 20px
+			padding-top: 40px
+			p 
+				text-align: center !important
+				font-size: 20px
+				color: $blanco
+				span 
+					color: $blanco
+					font-weight: 700
+					font-style: italic
+		.holdVeryfied_btn
+			width: 142px
+			height: 42px
+			float: left 
+			margin-left: 20px
+			position: absolute
+			top: 30px
+			right: -150px
+			.btns_btm
+				width: 142px
+				height: 42px
+				position: relative
+				float: left
+				
+				background-repeat: no-repeat
+				p 
+					position: relative
+					left: 8px
+					top: 10px
+					color: $blanco
+					font-weight: 700
+				&.btn_conf
+					margin-left: 28px
+					background-color: $rojo
+					background-image: url("../images/gui/age/confi.png")
+					background-position: 17px center 
+
+					&:hover 
+						background-color: $rojo-hover
+
+				&.btn_back
+					background-color: $blanco
+					background-image: url("../images/gui/age/back.png")
+					background-position: 20px center 
+					p 
+						color: $negro
+
+
+#pop_up_go
+	display: none
+.popUpHolder
+	width: 780px
+	height: 410px
+	top: 50px
+	background-color: $light-carmesi
+
+	.holdwithGrid
+		.safe-area
+			width: 725px
+			height: 360px
+			#info_full_prize
+				width: 100%
+				height: 100%
+			.section-half
+				.points_to
+					width: 160px
+					height: 30px
+					margin-bottom: 30px
+					position: relative
+					p 
+						font-size: 20px
+						font-weight: 700
+					.icono_point
+						width: 12px
+						height: 12px
+						position: absolute
+						top: 10px
+						right: 0px
+				.boxName
+					width: 250px
+					height: 40px
+					position: relative
+					margin-bottom: 30px
+					background-color: $blanco
+					p 
+						color: $negro
+						top: 10px
+						text-align: center !important
+				.imgPrice
+					width: 217px
+					height: 217px
+					position: absolute
+					bottom: 0
+					left: 0
+					overflow: hidden
+					img 
+						width: 100%
+				.topONe
+					width: 100%
+					margin-bottom: 15px
+					p 
+						font-size: 17px
+						line-height: 20px
+						color: $blanco
+						text-align: center !important
+				.holdSelect
+					width: 100%
+					height: 40px
+					position: relative
+					margin-bottom: 20px
+				.holdCodes
+					width: 100%
+					height: 90px
+					margin-bottom: 10px
+					.points_to 
+						width: 100%
+						height: 24px
+						margin-bottom: 20px
+						p 
+							text-align: center !important
+
+					.btnshoLD
+						width: 100% 
+						height: 40px
+						.btnsRedim
+							width: 146px
+							height: 40px
+							background-color: $blanco
+							margin: 0 auto
+							p 
+								top: 10px
+								color: $negro
+								text-align: center !important
+				.holdTextredimer
+					width: 100%
+					height: 20px
+					color: $blanco
+					margin-bottom: 20px
+					p 
+						text-align: center !important
+				.phoneConcect
+					width: 190px
+					height: 20px
+					margin-bottom: 30px
+					.txtConc, .iconoPhone
+						float: left
+					.iconoPhone
+						width: 13px
+						height: 21px
+						margin-right: 5px
+						background-image: url("../images/gui/perfil/assets/phone_red.png")
+						background-repeat: no-repeat
+						background-position: center	
+					.txtConc
+						width: 150px
+						p 
+							top: 3px
+				.lastB
+					width: 125px
+					height: 40px
+					position: relative
+					.prizes_back
+						width: 100%
+						height: 100%
+						background-color: $blanco
+						background-image: url("../images/gui/prizes/back.png")
+						background-repeat: no-repeat
+						background-position: 5px center
+						p 
+							color: $negro
+							top: 9px
+							left: 2px
+							text-align: center !important
+			#sms_info_gate, #email_info_gate
+				.topONe
+					width: 220px !important
+					margin-bottom: 30px !important
+				.inputSend
+					width: 160px
+					height: 40px
+					margin-bottom: 40px
+					input 
+						text-align: center !important
+				.holdsend
+					width: 148px
+					height: 40px
+					margin-bottom: 70px
+					.btsumit
+						width: 148px
+						height: 40px
+						position: relative
+						float: left
+						background-color: $rojo
+						background-image: url("../images/gui/age/submit.png")
+						background-position: 20px 11px
+						background-repeat: no-repeat
+						p 
+							position: relative
+							font-weight: 700
+							top: 11px
+							left: 15px
+							text-align: center !important
+			.closepopUp
+				width: 13px
+				height: 13px
+				position: absolute
+				top: -15px
+				right: -15px
+				background-image: url("../images/gui/prizes/x.png")
+	.lasTcheers
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		p 
+			text-align: center !important
+		.top_msg
+			margin-bottom: 50px
+
+		.msgTrans
+			margin-bottom: 70px
+		.lastB
+			width: 125px
+			height: 40px
+			position: relative
+			.prizes_back
+				width: 100%
+				height: 100%
+				background-color: $blanco
+				background-image: url("../images/gui/prizes/back.png")
+				background-repeat: no-repeat
+				background-position: 10px center
+				p 
+					color: $negro
+					top: 9px
+					left: 2px
+					text-align: center !important
+	#sms_info_gate, #email_info_gate, #cheers_salute
+		display: none
+
+
+
+
+.perfil_bg .safe-all
+	.btmpart
+		width: 100%
+		height: 320px
+		position: relative
+		background-color: $amarillo
+		background-image: url(../images/gui/perfil/pestana.png)
+		background-repeat-y: no-repeat
+		background-position: center top
+		.holdRefers
+			width: 170px
+			height: 50px
+			margin-bottom: 20px
+			.friensSo
+				width: 100%
+				height: 25px
+				p
+					text-align: center
+					color: $gris-font
+			.holdLOw
+				width: 50px
+				height: 25px
+				.lftm
+					width: 50%
+					float: left
+					height: 100%
+				.counter_Friends p 
+					color: $rojo
+					text-align: right
+				.iconoMn
+					width: 21px
+					height: 21px
+					background-image: url(../images/gui/perfil/assets/friends_so_far.png)
+					background-repeat: no-repeat
+					background-position: center
+		.getMore
+			width: 295px
+			height: 35px
+			border-bottom: 2px solid #ede0a7
+			margin-bottom: 20px
+			h2 
+				text-align: center
+				color: $carmesi
+		.holdBtnsPromos
+			width: 710px
+			height: 140px
+			.btnsGo
+				width: 100%
+				height: 52px
+				position: relative
+				margin-bottom: 20px
+				background-repeat: no-repeat
+				&.btn_chll
+					background-image: url(../images/gui/perfil/btn_challenge.png)
+					background-position: left center
+				&.btn_mth
+					width: 412px
+					background-image: url(../images/gui/perfil/match.png)
+					background-position: right center
+					position: absolute
+					top: 0
+					right: -3px
+				&.btn_code
+					background-image: url(../images/gui/perfil/btn_code.png)
+					background-position: right center
+					position: absolute
+					bottom: 0
+					right: 0
+			.redXms
+				width: 298px
+				height: 66px
+				background-image: url(../images/gui/perfil/chal.png)
+				background-position: left center
+		.btmTab.btn_cursor
+			height: 60px
+			width: 100%
+			position: absolute
+			left: 0
+			bottom: 0
+			background-image: url(../images/gui/perfil/pestanaL.png)
+			background-repeat-y: no-repeat
+			background-position: center top
+			h1
+				color: $blanco
+				text-align: center
+.perfil_bg
+	.nav_var
+		width: 100%
+		height: 50px
+		position: absolute
+		left: 0
+		top: 85px
+		background-color: $carmesi
+		.safe-in
+			width: 960px
+			height: 100px
+			.profile_gating
+				width: 310px
+				height: 100px
+				float: left
+				position: relative
+				.circleimg
+					width: 98px
+					height: 98px
+					position: absolute
+					+border-radius(50%)
+					overflow: hidden
+					top: -30px 
+					left: 0
+					img 
+						width: 100%
+						height: 100px
+				.holder_dropdown
+					width: 208px
+					height: 100px
+					position: absolute
+					top: 0
+					right: 0
+					.welcomTxt
+						width: 100%
+						height: 100%
+						position: absolute
+						top: 0
+						left: 0
+						p  
+							top: 13px
+							left: 10px 
+							span 
+								color: $rojo
+					.bullet
+						width: 18px
+						height: 18px
+						position: absolute
+						top: 15px
+						right: 15px
+						background-image: url(../images/gui/perfil/assets/drop_Down_account.png)
+						
+					.droping
+						width: 100%
+						height: 0px/*70*/
+						position: absolute
+						top: 50px
+						left: 0
+						overflow: hidden
+						
+						.selctionThis
+							width: 100%
+							height: 35px
+							position: relative
+							background-color: $carmesi
+							p 
+								text-align: left
+								color: $blanco
+								left: 10px
+								top: 5px
+							&:hover
+								background-color: $light-carmesi
+			.logoOne
+				width: 90px
+				height: 137px
+				top: -70px
+				left: -70px
+				img
+					width: 100%
+			.conections_part
+				width: 420px
+				padding-top: 15px 
+				height: 22px
+				position: relative
+				float: right
+				p 
+					float: left
+					font-weight: 700
+					margin-right: 20px
+					font-size: 12px
+					top: 5px
+				.socilasConects
+					width: 275px
+					height: 24px
+					position: relative
+					float: left
+					
+					.iconRed
+						width: 24px
+						height: 24px
+						position: relative
+						float: left
+						margin-right: 20px
+						img 
+							height: 100%
+					p 
+						margin-right: 0
+						
+
+
+
+
+
+
+
+
+
+
