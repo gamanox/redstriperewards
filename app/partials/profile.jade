@@ -5,7 +5,7 @@
 				p You have
 				h1(id="points_counter") 100
 				p <span>STRIPES</span>
-				.btnShow.btn_cursor
+				.btnShow.btn_cursor#puntosPerfil.open_popUp
 			.copyPart.centerIt-h
 				.ttp
 					p Get your friends to Sign Up and Recieve bonus <span>STRIPES!</span>
@@ -24,7 +24,7 @@
 				.boxSocial.btn-borders
 					.fb_linkShare.btn_cursor.linkBtn
 					.tt_linkShare.btn_cursor.linkBtn
-					.email_linkShare.btn_cursor.linkBtn
+					.email_linkShare.btn_cursor.linkBtn#sendBymail.open_popUp
 			.lastCopy
 				p When <span>3</span> friends sign up you get a<span>ReadStripe 1 Litre</span> or a<span>3-Pack Red Stripe Sorrel</span>
 		.btmpart
@@ -39,11 +39,11 @@
 				h2 GET MORE POINTS
 			.holdBtnsPromos.centerIt-h
 				.section-half
-					.btnsGo.btn_cursor.btn_chll
+					.btnsGo.btn_cursor.btn_chll#dailyChallenge.open_popUp
 					.redXms
 				.section-half
-					.btnsGo.btn_cursor.btn_mth
-					.btnsGo.btn_cursor.btn_code
+					.btnsGo.btn_cursor.btn_mth#footballChallenge.open_popUp
+					.btnsGo.btn_cursor.btn_code#codesChallenge.open_popUp
 			a.btmTab.btn_cursor#prizesShow(ng-href="#/prizes")
 				h1 PRIZES
 	.nav_var
@@ -75,4 +75,58 @@
 						img(src="images/gui/perfil/assets/phone_white.png", alt="")
 					p (Click to Connect)
 
-
+.imgbG.lightbox#popUp_gate
+	.holdwithGrid
+		.conteinerPopuP#sendBymail_popUp_gate.center-all.btn-borders
+			.safeArea.center-all
+				.closePop_codes.btn_cursor#sendBymail_popUp
+				.top_img.centerIt-h
+					img(src="images/gui/age/logo.png")
+				.copyHello.centerIt-h
+					p.hi <span>HI!<span>
+					p Join me on Red Stripe® Rewards<br> & get STRIPES to redeem BIG Prizes!
+					p Click this link to join NOW!
+				.linkShare.centerIt-h
+					a(href="http://bit.ly/rddfhdhfu") 
+						p bit.ly/rddfhdhfu
+				.holdBtns.centerIt-h
+					a.btsumit.btn_cursor.btn-borders(href="mailto:xx@xxxx.com?subject=Join me on Red Stripe® Rewards&body= Get STRIPES to redeem BIG Prizes! http://bit.ly/rddfhdhfu")
+						p Send e-mail
+					.btcopy.btn_cursor.btn-borders
+						p Copy to Clipboard
+		.conteinerPopuP#dailyChallenge_popUp_gate.center-all.btn-borders
+			.safeArea.center-all
+				.closePop_codes.btn_cursor#dailyChallenge_popUp
+				.top_img.centerIt-h
+					img(src="images/gui/age/logo.png")
+				.topCh
+					h2 Share this photo with <br><span>#RedStripeChristmas</span><br>NOW!!
+				.imgholder.centerIt-h
+					.inImg.centerIt-h
+						img(src="images/gui/pop_ups/chd.png", alt="")
+				.shareSect.centerIt-h
+					.holdTX
+						p Share via:
+					.boxSocial.btn-borders
+						.fb_linkShare.btn_cursor.linkBtn
+							p 10<br>Stripes
+						.tt_linkShare.btn_cursor.linkBtn
+							p 5<br>Stripes
+		.conteinerPopuP#footballChallenge_popUp_gate.center-all.btn-borders
+			img( src="images/gui/pop_ups/footb.png" )
+			.closePop_codes.btn_cursor#footballChallenge_popUp
+			.btnsTeamsHolder.center-horizontal
+				.btSeletct.btn_cursor.btn-borders#team_1
+					p Select
+				.btSeletct.btn_cursor.btn-borders#team_2
+					p Select
+		.conteinerPopuP#codesChallenge_popUp_gate.center-all.btn-borders
+			.closePop_codes.btn_cursor#codesChallenge_popUp
+			.holdInputDown.center-horizontal
+				input(type="text", name="codeChallenge", id="codeChallengeinput", placeholder="CODE")
+			.holdBtns.center-horizontal
+				.btsumit.btn_cursor.btn-borders#submitCodeChallenge
+					p Submit
+		.conteinerPopuP#puntosPerfil_popUp_gate.center-all.btn-borders
+			.safeArea.center-all
+				.closePop_codes.btn_cursor#puntosPerfil_popUp

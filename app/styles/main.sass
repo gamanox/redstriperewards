@@ -2070,10 +2070,228 @@ input[type="text"], input[type="number"], input[type="password"], input[type="te
 
 
 
+#dailyChallenge_popUp_gate, #footballChallenge_popUp_gate, #codesChallenge_popUp_gate
+	width: 870px
+	height: 636px
+	background-image: url("../images/gui/pop_ups/bg_chD.png")
+	background-position: center
+	background-repeat: no-repeat
+	background-color: rgba(47,47,47,0.8)
+	.topCh
+		margin-top: 5px
+		h2 
+			color: $blanco
+			text-align: center
+			span 
+				color: $blanco !important
+				font-size: 35px
+				font-weight: 700
+				font-style: italic
+				line-height: 27px
+	.imgholder
+		width: 500px
+		height: 274px
+		border-bottom: 2px solid $gris-font
+		margin-bottom: 20px
+		.inImg
+			width: 220px
+			height: 264px
+			overflow: hidden
+			img
+				width: 100%
+	.shareSect
+		width: 240px
+		height: 55px
+		margin-bottom: 5px
+		.holdTX
+			float: left
+			width: 74px
+			padding-top: 10px
+			height: 20px
+			p 
+				color: $negro
+				top: 10px
+			
+		.boxSocial
+			width: 160px
+			height: 67px
+			border: 1px solid $gris-font
+			position: relative
+			float: left
+			background-color: $blanco
+			.linkBtn
+				position: absolute
+				top: 5px
+				background-repeat: no-repeat
+				background-position: center
+				width: 32px
+				height: 32px
+
+				&.fb_linkShare
+					background-image: url(../images/gui/perfil/assets/fb.png)
+					left: 25px
+				&.tt_linkShare
+					background-image: url(../images/gui/perfil/assets/Forma-12.png)
+					left: 103px
+				&.email_linkShare
+					width: 82px
+					left: 178px
+					background-image: url(../images/gui/perfil/assets/email.png)
+				p 
+					font-size: 12px
+					line-height: 12px
+					color: $negro 
+					top: 34px
+
+#footballChallenge_popUp_gate
+	overflow: hidden
+	background-color: rgba(47,47,47,0.0)
+	background-image: url("../images/gui/pop_ups/footb.png")
+	
+	img 
+		height: 100%
+	.closePop_codes
+		top: 15px
+	.btnsTeamsHolder
+		width: 400px
+		height: 40px
+		bottom: 130px
+		.btSeletct
+			width: 110px
+			height: 40px
+			position: relative
+			background-color: $blanco
+			p 
+				position: relative
+				top: 11px
+				color: $negro !important
+				text-align: center !important
+			&#team_2
+				float: right
+			&#team_1
+				float: left
+
+#codesChallenge_popUp_gate
+	background-color: rgba(47,47,47,0.0)
+	background-image: url("../images/gui/pop_ups/codes.png")
+	.closePop_codes
+		top: 8px
+		right: 8px
+	.holdInputDown
+		width: 360px
+		height: 40px
+		bottom: 90px
+		input 
+			text-align: center
+	.holdBtns
+		width: 148px
+		height: 40px
+		bottom: 40px
+		.btsumit, .btcopy
+			width: 148px
+			height: 40px
+			position: relative
+			p 
+				position: relative
+				top: 11px
+				left: 17px
+				color: $blanco !important
+				text-align: center !important
+			
+		.btsumit
+			float: left
+			background-color: $rojo
+			background-image: url("../images/gui/age/submit.png")
+			background-position: 20px 11px
+			background-repeat: no-repeat
+			
+		.btcopy
+			float: right
+			background-color: $azul-email
+			p 
+				left: 0
+#puntosPerfil_popUp_gate
+	background-color: rgba(47,47,47,0.0)
+	background-image: url("../images/gui/pop_ups/prizes.png")
 
 
 
 
 
+#sendBymail_popUp_gate, #dailyChallenge_popUp_gate, #footballChallenge_popUp_gate, #codesChallenge_popUp_gate, #popUp_gate, #puntosPerfil_gate
+	display: none
+.conteinerPopuP
+	width: 460px
+	height: 450px
+	background-color: $blanco
+	p 
+		color: $otro-gris !important
+		text-align: center
+		span 
+			color: $otro-gris !important
+			text-align: left !important
+			font-weight: 700
+	.safeArea
+		width: 95%
+		height: 90%
+		.top_img
+			width: 88px
+			height: 121px
+			img 
+				width: 100%
+		.copyHello
+			width: 370px
+			p 
+				margin-bottom: 30px
+				font-size: 17px
+			.hi
+				text-align: left !important
+				margin-left: 90px
+				margin-bottom: 10px
+		.linkShare
+			width: 80%
+			height: 20px
+			border-bottom: 1px solid $gris-font
+			margin-bottom: 30px
+			padding-bottom: 15px
+			a 
+				color: $negro !important
+				font-size: 13px
+				text-align: center !important
 
+		.holdBtns
+			width: 380px
+			height: 40px
+			.btsumit, .btcopy
+				width: 148px
+				height: 40px
+				position: relative
+				p 
+					position: relative
+					top: 11px
+					left: 17px
+					color: $blanco !important
+					text-align: center !important
+				
+			.btsumit
+				float: left
+				background-color: $rojo
+				background-image: url("../images/gui/age/submit.png")
+				background-position: 20px 11px
+				background-repeat: no-repeat
+				
+			.btcopy
+				float: right
+				background-color: $azul-email
+				p 
+					left: 0
+	.closePop_codes
+		width: 18px
+		height: 18px
+		position: absolute
+		top: 0px
+		right: 15px
+		background-image: url("../images/gui/prizes/x2.png")
+		background-repeat: no-repeat
+		background-position: center
 

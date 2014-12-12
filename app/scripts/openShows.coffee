@@ -9,6 +9,8 @@ OpenShows = ->
     btn_prize: $(".prize-grid-item")
     close_elPopUP: $(".close_elPopUP")
     bnt_sumit: $(".btsumit")
+    closePop_codes: $(".closePop_codes")
+    open_popUp: $(".open_popUp")
 
   return
 
@@ -53,7 +55,7 @@ OpenShows::bind = ->
 
   
   # $('#prizesShow').on('click', function(){
-  # 	$('#prizes_gate').css({display:'block'});
+  #   $('#prizes_gate').css({display:'block'});
   # });
   s.btn_confi_prizes.on "click", ->
     elId = $(this).attr("id")
@@ -78,6 +80,20 @@ OpenShows::bind = ->
   s.bnt_sumit.on "click", ->
     $("#cheers_salute").css "display", "block"
     $("#info_full_prize").css display: "none"
+    return
+
+  s.open_popUp.on "click", ->
+    console.log 'open'
+    console.log 'this: '+$(this)
+    cual = $(this).attr("id")
+    $("#" + cual + "_popUp_gate").css "display", "block"
+    $("#popUp_gate").css "display", "block"
+    return
+
+  s.closePop_codes.on "click", ->
+    cual = $(this).attr("id")
+    $("#" + cual + "_gate").css "display", "none"
+    $("#popUp_gate").css "display", "none"
     return
 
   return

@@ -289,6 +289,19 @@ angular.module('app.controllers', [])
 	console.log userData
 	$('.circleimg img').attr src: userData.picture
 	$('#userNameprofile').html userData.first_name
+	Main = init: ->
+	  openShows = new OpenShows()
+	  openShows.init()
+	  return
+
+	$ ->
+	  Main.init()
+	  return
+
+
+
+
+
 )
 
 .controller('connectCtrl', ($scope)->
@@ -350,6 +363,7 @@ angular.module('app.controllers', [])
 )
 
 .controller('prizesCtrl', ($scope)->
+
 	popSMS = ->
 		if userData.phone
 			$('#sms_info_gate .topONe p').html 'A redemption code was sent to +1 (876) '+userData.phone
@@ -423,13 +437,18 @@ angular.module('app.controllers', [])
 		$('#sms_info').on 'click', ->
 			sendSMS()
 	Main = init: ->
-	openShows = new OpenShows();
-	openShows.init();
-	return
+	  openShows = new OpenShows()
+	  openShows.init()
+	  return
+
+	$ ->
+	  Main.init()
+	  return
+
+	
 
 
-	Main.init()
-	return
+	
 	
 )
 
