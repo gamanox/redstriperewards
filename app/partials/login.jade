@@ -5,12 +5,13 @@
 			.holdConfirmation
 				h2 Login
 				.hold_names.centerIt-h.sossn.logs
-					.inputsnames
-						.conect_facebook.btn_cursor.btns_sosConect.btn-borders
-							p Login via Facebook
-					.inputsnames
-						.conect_twitter.btn_cursor.btns_sosConect.btn-borders
-							p Login via Twitter
+					.holdBtns(style="width:100%; height: 60px; position: relative;")
+						.inputsnames(style="left: 139px")
+							.conect_facebook.btn_cursor.btns_sosConect.btn-borders
+								p Login via Facebook
+					//- .inputsnames
+					//- 	.conect_twitter.btn_cursor.btns_sosConect.btn-borders
+					//- 		p Login via Twitter
 
 					h4 Or via e-mail/ cell phone:
 					.iconos.centerIt-h
@@ -28,7 +29,9 @@
 					.btn_log.btn_cursor.btns_btm.btn-borders.red_btns.centerIt-h
 						p Login
 					.alert
-						p Incorrect user/password: please try again
+						//- p Incorrect user/password: please try again
 				.hold_btn2.centerIt-h
 					a.btn_back.btn_cursor.btn-borders(ng-href="#/home")
 						p Go Back
+
+include _footer.jade

@@ -1,0 +1,86 @@
+.imgbG#profile_gate.perfil_bg
+	.safe-all
+		.pestana
+			.nameIt.centerIt-h
+				h2 MY ACCOUNT
+		.inerSafe.centerIt-h
+			.rows.firsteRow
+				.holdImg.centerIt-h
+					img(src="images/gui/perfil/profile.png", alt="")
+				.holdBtnup.centerIt-h.btn_cursor
+					
+					p Change Profile Picture
+					input(type="file")
+			.rows.sndRow
+				.topInputs.centerIt-h
+					.holdiPS
+						.textName
+							p First Name
+						.inputhold
+							input(type="text", name="name", id="name_edit_profile", placeholder="")
+						.textName.edit.btn_cursor#edit-nameProfile
+							p Edit
+					.holdiPS
+						.textName
+							p Last Name
+						.inputhold
+							input(type="text", name="name", id="name_edit_profile", placeholder="")
+						.textName.edit.btn_cursor#edit-LastnameProfile
+							p Edit
+					.holdiPS
+						.textName
+							p Cell Number
+						.inputhold
+							input(type="text", name="name", id="name_edit_profile", placeholder="")
+					.lineYellow.centerIt-h
+				.socTop
+					.textName.nameAc
+							p Connect Accounts
+					.holdConccected
+						.fcclocI.inIcsBtns
+							.faceIcon#fb_perfil
+							.arrowSelect.active
+								img(src="images/gui/perfil/assets/Green_tick.png", alt="")
+						.fcclocI.inIcsBtns
+							.faceIcon#tt_perfil
+							.arrowSelect.active
+								img(src="images/gui/perfil/assets/Green_tick.png", alt="")
+						.fcclocI.inIcsBtns.phcL
+							.faceIcon#cel_perfil
+							.arrowSelect.active
+								img(src="images/gui/perfil/assets/Green_tick.png", alt="")
+
+
+					.lineYellow.centerIt-h
+				.lastOnes.socTop
+					.textName.nameAc
+							p Friends Referred
+					.friendsHolder
+						.friendsIt.btn-borders
+							p Mike brown
+
+					.lineYellow.centerIt-h
+				.referPar
+					.textName.redmAc.centerIt-h
+							p Redeemed Prizes
+					.holdPrizes.centerIt-h
+						.prizsesIt.btn-borders
+							p Nothing Yet
+
+
+
+			.rows.firsteRow
+				.icoHold
+					img(src="images/gui/age/logo.png")
+				.holdVeryfied_btn
+					a.btn_back.smsV.btn_cursor.btns_btm.btn-borders.red_btns(ng-href="#/profile")
+						p Go Back
+
+include _footer.jade
+
+
+
+
+
+
+

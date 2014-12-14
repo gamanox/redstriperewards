@@ -4,6 +4,7 @@
 		.safe-all
 			.logo
 			.hold_ageGate
+				input(type="hidden", id="rememberMe_box", value="no")
 				h3 You must 18 year or older to participate. <br> Please confirm your DOB
 				.holdDOB
 					#holD.dayInput.boxIp.btn_cursor
@@ -38,3 +39,5 @@
 				.hold_btns.centerIt-h
 					.btn_back.btn_cursor.btns_btm.btn-borders
 						p Go Back
+
+include _footer.jade

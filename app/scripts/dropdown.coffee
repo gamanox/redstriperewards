@@ -87,7 +87,19 @@ Dropdowns::bind = ->
     s.confirm.css "display", "none"
     return
 
+  $(".checkbox_age").on "click", ->
+    rember = $("#rememberMe_box").val()
+    console.log "shits" + rember
+    if rember is "yes"
+      $("#rememberMe_box").val "no"
+      $(".checkbox_age").removeClass "activeone"
+    else
+      $("#rememberMe_box").val "yes"
+      $(".checkbox_age").addClass "activeone"
+    return
+
   return
+
 
 Dropdowns::animation = (animation, elId, alto) ->
   self = this

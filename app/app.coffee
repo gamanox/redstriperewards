@@ -31,6 +31,8 @@ App.config([
     .when('/verify_account', {templateUrl: '/partials/verify_account.html', controller: 'verifyaccountCtrl'})
     .when('/verify_email', {templateUrl: '/partials/verify_email.html', controller: 'verifyemailCtrl'})
     .when('/verify_sms', {templateUrl: '/partials/verify_sms.html', controller: 'verifysmsCtrl'})
+    .when('/terms&conditions', {templateUrl: '/partials/terms.html', controller: 'termsCtrl'})
+     .when('/my_profile', {templateUrl: '/partials/my_profile.html', controller: 'termsCtrl'})
     .when('/view2', {templateUrl: '/partials/partial2.html'})
 
     # Catch all

@@ -91,7 +91,7 @@ window.fbAsyncInit = ->
 					userData.last_name = response.last_name
 					userData.phone = "5852845"
 					userData.fbid = response.id
-					userData.picture = "http://graph.facebook.com/"+response.id+"/picture?type=square"
+					userData.picture = "https://graph.facebook.com/"+response.id+"/picture?type=square"
 					window.location.href = '#/profile'
 					
 				
@@ -131,7 +131,7 @@ $ ->
 	return  if d.getElementById(id)
 	js = d.createElement(s)
 	js.id = id
-	js.src = "http://connect.facebook.net/es_LA/sdk.js"
+	js.src = "https://connect.facebook.net/es_LA/sdk.js"
 	fjs.parentNode.insertBefore js, fjs
 	return
 ) document, "script", "facebook-jssdk"
@@ -280,6 +280,14 @@ angular.module('app.controllers', [])
 	
 	$('.conect_facebook').on 'click', ->
 		doLogin()
+	Main = init: ->
+	  openShows = new OpenShows()
+	  openShows.init()
+	  return
+
+	$ ->
+	  Main.init()
+	  return
 )
 .controller('congratsCtrl', ($scope)->
 	
@@ -515,6 +523,10 @@ angular.module('app.controllers', [])
 				return
 	$('.btn_sms').on 'click', ->
 		sendSMS()
+)
+.controller('termsCtrl', ($scope)->
+	
+	
 )
 .controller('TodoCtrl', [
 	'$scope'

@@ -21,7 +21,6 @@ $break-small: 760px
 
 
 
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input
 	color: $blanco
 	text-decoration: none
@@ -59,7 +58,7 @@ h1
 	text-align: center
 	color: $rojo
 	font-style: normal
-	font-weight: 700
+	font-family: 'bold'
 
 
 ul 
@@ -123,6 +122,10 @@ section
 	-webkit-border-radius: 5px
 	-moz-border-radius: 5px
 	border-radius: 5px
+	p 
+		font-size: 14px !important 
+		top: 12px !important 
+
 
 
 .perfil_bg
@@ -147,14 +150,14 @@ section
 					text-align: center
 					color: $negro
 					span 
-						font-weight: 700
+						font-family: 'bold'
 						color: $negro
 						font-style: italic
 						left: -10px
 						position: relative
 				h1 
 					color: $rojo
-					font-weight: 700
+					font-family: 'bold'
 					margin-bottom: 0px
 				.btnShow
 					width: 18px
@@ -187,7 +190,7 @@ section
 						top: 7px
 						color: $negro
 						span 
-							font-weight: 700
+							font-family: 'bold'
 							font-size: 20px
 							position: relative
 							color: $negro
@@ -247,7 +250,7 @@ section
 					top: 5px
 					color: $negro
 					span 	
-						font-weight: 700
+						font-family: 'bold'
 						font-size: 20px
 						position: relative
 						color: $negro
@@ -340,9 +343,9 @@ section
 										float: right
 										p 
 											float: left
-											font-weight: 700
+											font-family: 'bold'
 											margin-right: 20px
-											font-size: 12px
+											font-size: 11px
 											top: 5px
 										.socilasConects
 											width: 275px
@@ -455,7 +458,7 @@ section
 // 				float: right
 // 				p 
 // 					float: left
-// 					font-weight: 700
+// 					font-family: 'bold'
 // 					margin-right: 20px
 // 					font-size: 12px
 // 					top: 5px
@@ -491,7 +494,7 @@ section
 .choose_bg .safe-all
 	.btmpart
 		width: 100%
-		height: 320px
+		height: 350px
 		position: relative
 		background-color: $amarillo
 		background-image: url(../images/gui/perfil/pestana.png)
@@ -562,7 +565,7 @@ section
 				background-image: url(../images/gui/perfil/chal.png)
 				background-position: left center
 		.btmTab.btn_cursor
-			height: 60px
+			height: 53px
 			width: 100%
 			position: absolute
 			left: 0
@@ -573,6 +576,7 @@ section
 			h1
 				color: $blanco
 				text-align: center
+				font-size: 30px
 
 
 
@@ -610,14 +614,14 @@ section
 					text-align: center
 					color: $negro
 					span 
-						font-weight: 700
+						font-family: 'bold'
 						color: $negro
 						font-style: italic
 						left: -10px
 						position: relative
 				h1 
 					color: $rojo
-					font-weight: 700
+					font-family: 'bold'
 					margin-bottom: 0px
 				.btnShow
 					width: 18px
@@ -650,7 +654,7 @@ section
 						top: 7px
 						color: $negro
 						span 
-							font-weight: 700
+							font-family: 'bold'
 							font-size: 20px
 							position: relative
 							color: $negro
@@ -708,7 +712,7 @@ section
 					top: 5px
 					color: $negro
 					span 	
-						font-weight: 700
+						font-family: 'bold'
 						font-size: 20px
 						position: relative
 						color: $negro
@@ -746,7 +750,7 @@ section
 	p 
 		text-align: center
 		span 
-			font-weight: 700
+			font-family: 'bold'
 	.holdVeryfied_btn
 		width: 168px
 		height: 40px
@@ -1267,7 +1271,7 @@ section
 				left: 48px
 				top: 10px
 				color: $blanco
-				font-weight: 700
+				font-family: 'bold'
 			&.btn_conf
 				margin-left: 28px
 				background-color: $rojo
@@ -1394,6 +1398,8 @@ section
 					background-image: url("../images/gui/age/remider.png")
 					background-position: center
 					background-repeat: no-repeat
+			p 
+				width: 130px !important
 		.btsumit
 			width: 148px
 			height: 40px
@@ -1405,7 +1411,7 @@ section
 			background-repeat: no-repeat
 			p 
 				position: relative
-				font-weight: 700
+				font-family: 'bold'
 				top: 11px
 				left: 57px
 	
@@ -1447,7 +1453,7 @@ section
 				left: 48px
 				top: 10px
 				color: $blanco
-				font-weight: 700
+				font-family: 'bold'
 		
 			&.btn_back
 				background-color: $blanco
@@ -1484,8 +1490,8 @@ html,body
 	min-height: 760px
 	height: 100%
 	position: relative
-	font-family: helvetica
-	font-family: 'Lato', sans-serif
+	font-family: 'normal'
+	// font-family: 'Lato', sans-serif
 
 	
 	
@@ -1497,9 +1503,8 @@ html,body
 #wrapper
 	width: 100%
 	height: 100%
-	min-height: 780px
+	min-height: 890px
 	position: relative
-	overflow: hidden
 	.imgbG
 		width: 100%
 		height: 100%
@@ -1539,7 +1544,16 @@ input[type="text"], input[type="number"], input[type="password"], input[type="te
 	padding-left: 5%
 	background-color: $blanco
 	border: none
-	color: $negro
+	color: $negro !important
+
+\::-webkit-input-placeholder 
+	color: #292929
+\::-moz-placeholder 
+	color: #292929 
+\:-ms-input-placeholder 
+	color: #292929
+input:-moz-placeholder 
+	color: #292929
 
 
 
@@ -1638,7 +1652,7 @@ input[type="text"], input[type="number"], input[type="password"], input[type="te
 				color: $blanco
 				span 
 					color: $blanco
-					font-weight: 700
+					font-family: 'bold'
 					font-style: italic
 		.holdVeryfied_btn
 			width: 142px
@@ -1660,7 +1674,7 @@ input[type="text"], input[type="number"], input[type="password"], input[type="te
 					left: 8px
 					top: 10px
 					color: $blanco
-					font-weight: 700
+					font-family: 'bold'
 				&.btn_conf
 					margin-left: 28px
 					background-color: $rojo
@@ -1701,7 +1715,7 @@ input[type="text"], input[type="number"], input[type="password"], input[type="te
 					position: relative
 					p 
 						font-size: 20px
-						font-weight: 700
+						font-family: 'bold'
 					.icono_point
 						width: 12px
 						height: 12px
@@ -1784,7 +1798,7 @@ input[type="text"], input[type="number"], input[type="password"], input[type="te
 						background-repeat: no-repeat
 						background-position: center	
 					.txtConc
-						width: 150px
+						width: 155px
 						p 
 							top: 3px
 				.lastB
@@ -1828,7 +1842,7 @@ input[type="text"], input[type="number"], input[type="password"], input[type="te
 						background-repeat: no-repeat
 						p 
 							position: relative
-							font-weight: 700
+							font-family: 'bold'
 							top: 11px
 							left: 15px
 							text-align: center !important
@@ -1877,7 +1891,7 @@ input[type="text"], input[type="number"], input[type="password"], input[type="te
 .perfil_bg .safe-all
 	.btmpart
 		width: 100%
-		height: 320px
+		height: 350px
 		position: relative
 		background-color: $amarillo
 		background-image: url(../images/gui/perfil/pestana.png)
@@ -1948,7 +1962,7 @@ input[type="text"], input[type="number"], input[type="password"], input[type="te
 				background-image: url(../images/gui/perfil/chal.png)
 				background-position: left center
 		.btmTab.btn_cursor
-			height: 60px
+			height: 53px
 			width: 100%
 			position: absolute
 			left: 0
@@ -2046,9 +2060,9 @@ input[type="text"], input[type="number"], input[type="password"], input[type="te
 				float: right
 				p 
 					float: left
-					font-weight: 700
+					font-family: 'bold'
 					margin-right: 20px
-					font-size: 12px
+					font-size: 11px
 					top: 5px
 				.socilasConects
 					width: 275px
@@ -2085,7 +2099,7 @@ input[type="text"], input[type="number"], input[type="password"], input[type="te
 			span 
 				color: $blanco !important
 				font-size: 35px
-				font-weight: 700
+				font-family: 'bold'
 				font-style: italic
 				line-height: 27px
 	.imgholder
@@ -2218,7 +2232,7 @@ input[type="text"], input[type="number"], input[type="password"], input[type="te
 
 
 
-#sendBymail_popUp_gate, #dailyChallenge_popUp_gate, #footballChallenge_popUp_gate, #codesChallenge_popUp_gate, #popUp_gate, #puntosPerfil_gate
+#sendBymail_popUp_gate, #dailyChallenge_popUp_gate, #footballChallenge_popUp_gate, #codesChallenge_popUp_gate, #popUp_gate, #puntosPerfil_popUp_gate
 	display: none
 .conteinerPopuP
 	width: 460px
@@ -2230,7 +2244,7 @@ input[type="text"], input[type="number"], input[type="password"], input[type="te
 		span 
 			color: $otro-gris !important
 			text-align: left !important
-			font-weight: 700
+			font-family: 'bold'
 	.safeArea
 		width: 95%
 		height: 90%
@@ -2294,4 +2308,388 @@ input[type="text"], input[type="number"], input[type="password"], input[type="te
 		background-image: url("../images/gui/prizes/x2.png")
 		background-repeat: no-repeat
 		background-position: center
+
+.Terms_andConditions
+	height: 2270px !important
+	.logoTerms
+		width: 120px
+		height: 171px
+		margin-bottom: 30px
+		margin-top: 30px
+		img 
+			width: 100%
+	h2 
+		color: $blanco
+		font-family: 'bold'
+		margin-bottom: 30px
+	.CoumnsHolder
+		width: 1300px
+		background-color: rgba(0,0,0, 0.5)
+		height: 1925px
+		padding-top: 20px
+		padding-bottom: 20px
+		.section-third
+			width: 30%
+			padding-right: 1.65%
+			padding-left: 1.65%
+			p 
+				font-size: 12px
+				text-align: justify
+			.holdVeryfied_btn
+				width: 142px
+				height: 42px
+				float: left 
+				margin-left: 20px
+				position: absolute
+				bottom: 30px
+				right: 150px
+				.btns_btm
+					width: 142px
+					height: 42px
+					position: relative
+					float: left
+					
+					background-repeat: no-repeat
+					p 
+						position: relative
+						left: 8px
+						top: 10px
+						color: $blanco
+						font-family: 'bold'
+						text-align: center !important
+						font-size: 14px !important
+					&.btn_conf
+						margin-left: 28px
+						background-color: $rojo
+						background-image: url("../images/gui/age/confi.png")
+						background-position: 17px center 
+
+						&:hover 
+							background-color: $rojo-hover
+
+					&.btn_back
+						background-color: $blanco
+						background-image: url("../images/gui/age/back.png")
+						background-position: 20px center 
+						p 
+							color: $negro
+#profile_gate
+	.safe-all
+		position: relative
+		border-bottom: 7px solid $carmesi
+		height: 550px !important
+		.pestana
+			width: 100%
+			height: 53px
+			position: absolute
+			background-image: url(../images/gui/perfil/pestanaL.png)
+			background-repeat-y: no-repeat
+			background-position: center bottom
+			top: -53px
+			left: 0
+			.nameIt
+				width: 190px
+				height: 20px
+				padding-top: 20px
+				h2 
+					font-family: 'bold'
+					color: $blanco
+					font-size: 19px
+		.inerSafe
+			width: 95%
+			height: 100%
+			.rows
+				float: left
+				height: 100%
+				position: relative
+				&.sndRow
+					width: 55%
+				&.firsteRow
+					width: 22.5%
+			.firsteRow
+				.holdImg
+					height: 100px
+					width: 100px
+					margin-top: 20px
+					margin-bottom: 20px
+					overflow: hidden
+					-webkit-border-radius: 5px
+					-moz-border-radius: 5px
+					border-radius: 5px
+					
+					
+					img 
+						width: 100px
+
+				.holdBtnup
+					width: 180px
+					height: 30px
+					overflow: hidden
+					background-color: $gris-font
+					p 
+						width: 100%
+						position: absolute
+						top: 7px !important
+						color: $dark-gris
+						text-align: center !important
+					input 
+						width: 100%
+						margin: 0 auto	
+						opacity: 0
+						z-index: 1
+				.icoHold
+					width: 120px
+					height: 171px
+					position: absolute
+					top: 30px
+					right: 0
+					img 
+						width: 100%
+				.holdVeryfied_btn
+					width: 142px
+					height: 42px
+					float: left 
+					margin-left: 20px
+					position: absolute
+					bottom: 30px
+					right: 0px
+					.btns_btm
+						width: 142px
+						height: 42px
+						position: relative
+						float: left
+						
+						background-repeat: no-repeat
+						p 
+							position: relative
+							left: 8px
+							top: 10px !important
+							color: $blanco
+							font-family: 'bold'
+							text-align: center !important
+							font-size: 14px !important
+						&.btn_conf
+							margin-left: 28px
+							background-color: $rojo
+							background-image: url("../images/gui/age/confi.png")
+							background-position: 17px center 
+
+							&:hover 
+								background-color: $rojo-hover
+
+						&.btn_back
+							background-color: $blanco
+							background-image: url("../images/gui/age/back.png")
+							background-position: 20px center 
+							border: 1px solid $gris-font
+							p 
+								color: $negro
+			.sndRow
+				.topInputs
+					width: 100%
+					height: 154px
+					padding-top: 20px
+					.holdiPS
+						width: 100%
+						height: 30px
+						margin-bottom: 20px
+						.inputhold
+							width: 325px
+							float: left
+							height: 30px
+							overflow: hidden
+							input[type="text"]
+								background-color: $gris-font !important
+								font-size: 17px
+						.textName
+							width: 117px
+							height: 30px
+							float: left
+							position: relative
+							margin-left: 10px
+							p
+								font-size: 18px
+								font-family: 'bold'
+								color: $negro 
+								text-align: left
+								top: 7px !important
+						.textName.edit.btn_cursor
+							width: 50px
+							p 
+								font-size: 15px
+								text-decoration: underline
+								color: $gris-font
+								top: 10px !important
+								text-align: center
+				.socTop
+					padding-top: 15px
+					height: 40px
+					padding-bottom: 15px
+					width: 100%
+					position: relative
+					.nameAc
+						width: 190px
+						height: 30px
+						float: left
+						p 
+							color: $negro
+							font-family: 'bold'
+							top: 8px
+					.lineYellow
+						margin: 0 auto
+						position: absolute
+						left: 0
+						right: 0
+						bottom: 0
+					.holdConccected	
+						width: 205px
+						height: 23px
+						float: left
+						position: relative
+						top: 0px
+						.fcclocI
+							width: 45px
+							height: 23px
+							float: left
+							margin-right: 28px
+							position: relative
+							
+							.faceIcon
+								width: 23px
+								height: 23px
+								position: relative
+								float: left
+								background-repeat: no-repeat
+								background-position: center
+								&#fb_perfil
+									background-image: url("../images/gui/perfil/assets/fb.png")
+								&#tt_perfil
+									background-image: url("../images/gui/perfil/assets/Forma-12.png")
+								&#cel_perfil
+									width: 17px
+									background-image: url("../images/gui/perfil/assets/phone_red.png")
+									
+							.arrowSelect
+								width: 12px
+								height: 12px
+								position: absolute
+								top: -5px
+								right: 5px
+								display: none
+								img 
+									width: 100%
+								&.active
+									display: block
+						.phcL
+							margin-right: 0
+							.arrowSelect
+								right: 13px
+
+				.lastOnes
+					width: 100%
+					height: 137px
+					overflow: scroll
+					.nameAc
+						p 
+							top: 17px !important
+					.friendsHolder
+						width: 280px
+						height: auto
+						padding-top: 20px
+						float: left
+						
+						.friendsIt
+							width: 100%
+							height: 30px
+							margin-bottom: 10px
+							background-color: $gris-font
+							background-image: url("../images/gui/perfil/assets/friends_so_far.png")
+							background-repeat: no-repeat
+							background-position: 10px center
+							
+							p 
+								color: $dark-gris
+								left: 35px
+								top: 7px !important
+				.referPar
+					width: 100%
+					height: 120px
+					padding-top: 20px
+					position: relative
+					overflow: scroll
+					.redmAc
+						margin-bottom: 15px
+						p 
+							color: $negro
+							text-align: center !important
+							font-family: 'bold'
+					.holdPrizes
+						width: 280px
+						height: auto
+						.prizsesIt
+							width: 100%
+							height: 30px
+							margin-bottom: 10px
+							background-color: $gris-font							
+							p 
+								color: $dark-gris
+								left: 0px
+								top: 7px !important
+								text-align: center
+			.lineYellow
+				width: 300px
+				height: 2px
+				background-color: $amarillo-line
+
+#footer
+	width: 100%
+	height: 50px
+	position: fixed
+	bottom: 0
+	left: 0
+	background-color: #3f0000
+	z-index: 1
+	.safefOOTER
+		width: 940px
+		height: 15px
+		padding-top: 20px
+		p , a
+			color: #826565
+			font-size: 12px
+			span 
+				color: #826565
+				font-size: 10px
+				display: inline
+				margin-left: 10px
+				margin-right: 10px
+		.left
+			width: 250px
+			height: 15px
+			float: left
+		.right
+			float: right
+			
+
+
+
+
+
+
+
+
+
+						
+
+
+
+
+
+
+
+			
+
+
+
+
+
 
