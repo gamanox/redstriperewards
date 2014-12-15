@@ -172,7 +172,16 @@ angular.module('app.controllers', [])
 ])
 
 .controller('ageCtrl', ($scope)->
-	
+	$(".checkbox_age").on "click", ->
+	  rember = $("#rememberMe_box").val()
+	  console.log "shits" + rember
+	  if rember is "yes"
+	    $("#rememberMe_box").val "no"
+	    $(".checkbox_age").removeClass "activeone"
+	  else
+	    $("#rememberMe_box").val "yes"
+	    $(".checkbox_age").addClass "activeone"
+	  return
 	Main = init: ->
 	dropdowns = new Dropdowns()
 	dropdowns.init()
@@ -181,6 +190,8 @@ angular.module('app.controllers', [])
 
 	Main.init()
 	return
+	
+
 )
 .controller('registerCtrl', ($scope)->
 	errorForm = ""
