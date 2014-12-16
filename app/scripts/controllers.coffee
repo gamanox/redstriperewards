@@ -336,6 +336,37 @@ angular.module('app.controllers', [])
 )
 .controller('loginCtrl', ($scope)->
 	
+
+	hello.on "auth.login", (auth) ->
+	  
+	  # call user information, for the given network
+	  hello(auth.network).api("/me").then (r) ->
+	    
+	    window.location.href= '#/profile'
+
+	    # Inject it into the container
+	    # label = document.getElementById("profile_" + auth.network)
+	    # unless label
+	    #   label = document.createElement("div")
+	    #   label.id = "profile_" + auth.network
+	    #   document.getElementById("profile").appendChild label
+	    # label.innerHTML = "<img src=\"" + r.thumbnail + "\" /> Hey " + r.name
+	    # return
+	    username = r.name.split(' ')
+	    userData.first_name = username[0]
+	    userData.last_name = username[1]
+	    userData.tid = r.id_str
+	    userData.picture = r.profile_image_url
+	    userData.screen_name = r.screen_name
+	    $('#name_confirmation').val userData.first_name
+	    $('#Lastname_confirmation').val userData.last_name
+	    console.log userData
+	  return
+	$('.conect_twitter').on 'click', ->
+		console.log 'click'
+
+		hello( 'twitter' ).login()
+
 	$('.conect_facebook').on 'click', ->
 		doLogin()
 	Main = init: ->
