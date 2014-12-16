@@ -17,7 +17,7 @@ function get_short_url(long_url, login, api_key, func)
 
 var login = "o_2ah0i4qmjq";
 var api_key = "R_6807ad8823cf45d680023b590c04956f";
-var long_url = "http://www.kozlenko.info";
+var long_url = "https://www.redstriperewards.com/#age/#WSADF32";
 
 get_short_url(long_url, login, api_key, function(short_url) {
     console.log(short_url);
